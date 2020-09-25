@@ -5,18 +5,13 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-
-
 @Component
 public class ProductDao {
-    private List<Product> productList;
-
+    private final List<Product> productList;
 
     public ProductDao(List<Product> productList) {
         this.productList = productList;
     }
-
-
 
     public Product findByProductNumber(String productNumber) {
         Product returnProduct = new Product();
@@ -26,11 +21,8 @@ public class ProductDao {
                 returnProduct = product;
             }
         }
-
         return returnProduct;
     }
-
-
 
     public List<Product> getAllProducts() {
         return productList;
