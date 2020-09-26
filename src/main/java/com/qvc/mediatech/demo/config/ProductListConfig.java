@@ -15,8 +15,8 @@ public class ProductListConfig {
 
         List<Product> productList = new ArrayList<>();
 
-        productList.add(new Product("A123456", "A product number", "2020-01-01'T'12:00:00"));
-        productList.add(new Product("A789012", "A product number 2", "2020-01-01'T'12:30:00"));
+        productList.add(new Product("A123456", "A product number", "2020-01-04'T'12:00:00"));
+        productList.add(new Product("A789012", "A product number 2", "2020-01-02'T'12:30:00"));
         productList.add(new Product("B123456", "B product number", "2020-02-01'T'12:00:00"));
         productList.add(new Product("B789012", "B product number 2", "2020-02-01'T'12:30:00"));
         productList.add(new Product("C123456", "C product number", "2020-03-01'T'12:00:00"));
@@ -25,6 +25,7 @@ public class ProductListConfig {
         productList.add(new Product("D789012", "D product number 2", "2020-04-01'T'12:30:00"));
         productList.add(new Product("E123456", "E product number", "2020-04-01'T'12:00:00"));
         productList.add(new Product("E789012", "E product number 2", "2020-04-01'T'12:30:00"));
+        productList.add(new Product("E789312", "E product number 3", "2020-03-01'T'12:30:00"));
 
         return productList;
     }
