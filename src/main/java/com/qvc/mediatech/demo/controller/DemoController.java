@@ -34,7 +34,7 @@ public class DemoController {
     @GetMapping(value = "/product-list")
     public ResponseEntity<ProductList> getProducts() {
         try {
-            return new ResponseEntity<>(productManager.getAllProducts(), HttpStatus.OK);
+            return new ResponseEntity<>(productManager.getAllProductsSortedAndFilteredByA(), HttpStatus.OK);
 
         } catch (Exception ex) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

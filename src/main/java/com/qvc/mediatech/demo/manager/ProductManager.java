@@ -22,4 +22,26 @@ public class ProductManager {
         productList.setProducts(productDao.getAllProducts());
         return productList;
     }
+    
+    public ProductList getAllProductsStartingWithA() {
+        ProductList productList = new ProductList();
+        productList.setProducts(productDao.getAllProducts());
+        productList.filterProductListByLetter("A");
+        return productList;
+    }
+    
+    
+    public ProductList getAllProductsSortedByLastAired() {
+        ProductList productList = new ProductList();
+        productList.setProducts(productDao.getAllProducts());
+        productList.sortProductListByLastAired();
+        return productList;
+    }
+    
+    public ProductList getAllProductsSortedAndFilteredByA() {
+        ProductList productList = new ProductList();
+        productList.setProducts(productDao.getAllProducts());
+        productList.filterProductListByLetterAndSortStream("A");
+        return productList;
+    }
 }
